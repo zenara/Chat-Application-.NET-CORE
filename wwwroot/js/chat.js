@@ -4,7 +4,8 @@ var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
 
 connection.on("ReceiveMessage", function (user, message) {
     var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    var encodedMsg = user + " says " + msg;
+    var d = new Date();
+    var encodedMsg = user + " : " + msg + "     " + d;
     var li = document.createElement("li");
     li.textContent = encodedMsg;
     document.getElementById("messagesList").appendChild(li);
