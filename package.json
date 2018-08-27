@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/zenara/Chat-Application-.NET-CORE/issues"
   },
-  "homepage": "https://github.com/zenara/Chat-Application-.NET-CORE#readme"
+  "homepage": "https://github.com/zenara/Chat-Application-.NET-CORE#readme",
+  "dependencies": {
+    "@aspnet/signalr": "^1.0.3"
+  }
 }
