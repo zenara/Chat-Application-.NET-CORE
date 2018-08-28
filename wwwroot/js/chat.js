@@ -36,11 +36,3 @@ document.getElementById("sendButton").addEventListener("click", function (event)
     event.preventDefault();
 });
 
-
-
-//$(document).on("click",".delete", function() {
-    //var confirmation = confirm('Are you sure you want to delete this action plan/s?');
-    //if (confirmation == true) {
-  //    $(this).closest("#messegesList").remove();
-   // }
- // });
