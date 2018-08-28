@@ -14,7 +14,10 @@ connection.on("ReceiveMessage", function (user, message) {
     dbtn.appendChild(t);
     document.getElementById("messagesList").appendChild(li);
     li.appendChild(dbtn);
-
+    document.getElementById("delete").addEventListener("click", function(event){
+        var element = li.previousSibling;
+        document.getElementById("messagesList").removeChild(li);
+    });
 });
 
 
